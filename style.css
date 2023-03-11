@@ -21,9 +21,7 @@ body {
 }
 
 input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
+    display: none;
 }
 
 .content>img {
@@ -74,7 +72,7 @@ input {
 
 input:checked~.content>img,
 .meme:hover>.content>img {
-    height: 400px;
+    height: 40vh;
 }
 
 .meme:hover>.header>.icon,
@@ -99,7 +97,7 @@ footer {
     align-items: center;
     padding: 10px 30px;
     background-color: rgba(211, 211, 211, 0.5);
-    height: 50px;
+    height: 5vh;
 }
 
 .footer-data {
@@ -140,7 +138,7 @@ footer {
 
     input:checked~.content>img,
     .meme:hover>.content>img {
-        height: 400px;
+        height: 40vh;
     }
 
     footer {
@@ -166,7 +164,7 @@ footer {
 
     input:checked~.content>img,
     .meme:hover>.content>img {
-        height: 300px;
+        height: 30vh;
     }
 
     footer {
