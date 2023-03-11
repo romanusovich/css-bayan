@@ -13,6 +13,7 @@
 
 h2 {
     margin: 20px 10px;
+    cursor: auto !important;
 }
 
 body {
@@ -36,6 +37,10 @@ input {
     flex-direction: column;
     justify-content: center;
     width: 60%;
+}
+
+.memes * {
+    cursor: pointer;
 }
 
 .meme {
@@ -125,6 +130,10 @@ footer {
 }
 
 @media (max-width: 820px) {
+    * {
+        font-size: 1.3rem;
+    }
+    
     .memes {
         width: 100%;
     }
@@ -147,6 +156,10 @@ footer {
 }
 
 @media (max-width: 320px) {
+    * {
+        font-size: 1.2rem;
+    }
+
     .memes {
         width: 100%;
     }
