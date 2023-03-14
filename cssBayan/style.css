@@ -70,12 +70,10 @@ input {
     text-align: center;
 }
 
-input:checked~.content>img,
-.meme:hover>.content>img {
+input:checked~.content>img {
     height: 40vh;
 }
 
-.meme:hover>.header>.icon,
 input:checked~.header>.icon {
     rotate: 45deg;
 }
@@ -108,6 +106,24 @@ footer {
     width: 20%;
 }
 
+@media (hover: hover) {
+    .memes:hover .icon {
+        display: inline;
+    }
+
+    .memes:hover .title {
+        color: black;
+    }
+
+    .meme:hover>.content>img {
+        height: 40vh;
+    }
+
+    .meme:hover>.header>.icon {
+        rotate: 45deg;
+    }
+}
+
 @media (min-width: 821px) {
     .title {
         color: blue;
@@ -117,11 +133,6 @@ footer {
         display: none;
     }
 
-    .memes:hover .icon {
-        display: inline;
-    }
-
-    .memes:hover .title,
     input:checked~.header>.title {
         color: black;
     }
@@ -131,13 +142,12 @@ footer {
     * {
         font-size: 1.3rem;
     }
-    
+
     .memes {
         width: 100%;
     }
 
-    input:checked~.content>img,
-    .meme:hover>.content>img {
+    input:checked~.content>img {
         height: 40vh;
     }
 
@@ -162,8 +172,7 @@ footer {
         width: 100%;
     }
 
-    input:checked~.content>img,
-    .meme:hover>.content>img {
+    input:checked~.content>img {
         height: 30vh;
     }
 
